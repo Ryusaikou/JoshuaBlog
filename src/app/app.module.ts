@@ -10,6 +10,8 @@ import { InterceptorsComponent } from './core/interceptors/interceptors.componen
 import { ServicesComponent } from './core/services/services.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { BlogComponent } from './home/pages/blog/blog.component';
+import { PageNotFoundComponent } from './home/pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './core/footer/footer.component';
     InterceptorsComponent,
     ServicesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
