@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../../../shared/models/blogModels';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.sass']
 })
 export class BlogComponent implements OnInit {
-
+  articles: Article;
   constructor() { }
 
   ngOnInit() {
+    let x = new Article();
+    x.title = 'New Fucking Article';
+    x.body = 'Put some lorem Ipsum on dat body';
+    x.author = 'Fuckin Me bieotch';
+    x.publishDate = new Date();
+    this.articles = x;
   }
 
   grabLatestArticle(){

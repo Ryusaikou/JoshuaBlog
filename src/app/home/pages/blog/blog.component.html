@@ -1,3 +1,10 @@
-<p>
-  dis be blog page
-</p>
+<mat-tab-group>
+    <mat-tab label="First">
+      <h1 class="primary">{{articles.title}}</h1>
+      <h1 class="Alt">{{articles.title}}</h1>
+      <p>{{articles.body}}</p>
+      <p>Written by: {{articles.author}} on {{articles.publishDate}}</p>
+    </mat-tab>
+    <mat-tab label="Second"> <span color="Accent">x</span>Content 2 </mat-tab>
+    <mat-tab label="Third"> <button mat-button color="Accent">Click me!</button> </mat-tab>
+</mat-tab-group>

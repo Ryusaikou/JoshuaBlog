@@ -12,7 +12,15 @@ export class Article implements Deserializable{
     public publishDate: Date;
     public author: string;
     public comments: Comment[]
-
+    /**
+     *
+     */
+    constructor() {
+        this.title = '',
+        this.body = '',
+        this.publishDate = new Date(),
+        this.author = 'Me'
+    }
     deserialize(input: any): this {
         return Object.assign(this, input);
     }

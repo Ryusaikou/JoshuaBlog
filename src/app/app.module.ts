@@ -12,6 +12,8 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { BlogComponent } from './home/pages/blog/blog.component';
 import { PageNotFoundComponent } from './home/pages/page-not-found/page-not-found.component';
+import { MaterialModule } from './shared/modules/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PageNotFoundComponent } from './home/pages/page-not-found/page-not-foun
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
